@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<style>
+
+body {
+  background-color: MistyRose;
+}
+h2 {
+  color: purple;
+  font-family: verdana;
+  font-size: 200%;
+  padding:0px 5px 15px 20px;
+
+}
+p  {
+  color: blue;
+  font-family: courier;
+  font-size: 100%;
+  padding:0px 5px 15px 20px;
+}
+
+p1  {
+  color: red;
+  font-family: courier;
+  font-size: 80%;
+  padding:0px 5px 15px 20px;
+}
+
+a  {
+  color: orange;
+  font-family: courier;
+  font-size: 100%;
+  padding:0px 5px 15px 20px;
+}
+
+</style>
+</head>
+<body>
+<h2>Fibonacci Series</h2>
+<p> A series of numbers in which each number ( Fibonacci number ) is the sum of the two preceding numbers. The simplest is the series 1, 1, 2, 3, 5, 8, etc..</p>
+
+<title>Fibonacci Numbers</title>
+
+<form action="/fibonacci/getFibonacci/checkValue/" method="GET">
+  <a>Enter the nth Number : </a><br>
+  <input type="text" name="nthvalue" id="nthvalue" value="10"><br><br>
+  <input type="submit" id="submit" value="Submit">
+</form>
+<br>
+<p1> {{  fibo }} </p1>
+
+</body>
+</html>
